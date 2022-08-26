@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.box{
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+
+.box span{
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background: url(saki.jpeg);
+    background-size: cover;
+}
+
+.box span:nth-child(1){
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    
+}
+
+.box span:nth-child(2){
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    
+}
+
+.box span:nth-child(3){
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    
+}
+
+.box span:nth-child(4){
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    
+}
+
+/* hover effect */
+
+.box:hover span:nth-child(1){
+    transform: translate(-40px,-60px) rotate(-15deg);
+    transition-delay: 0s;
+}
+
+.box:hover span:nth-child(2){
+    transform: translate(40px,-100px) rotate(25deg);
+    transition-delay: 0.25s;
+}
+
+.box:hover span:nth-child(3){
+    transform: translate(-40px,80px) rotate(25deg);
+    transition-delay: 0.5s;
+}
+
+.box:hover span:nth-child(4){
+    transform: translate(40px,80px) rotate(-15deg);
+    transition-delay: 0.75s;
+}
+
+/* ------------ */
+
+.xob{
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+
+.xob span{
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background: url(tana.jpeg);
+    background-size: cover;
+}
+
+.xob span:nth-child(1){
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    
+}
+
+.xob span:nth-child(2){
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    
+}
+
+.xob span:nth-child(3){
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    
+}
+
+.xob span:nth-child(4){
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    
+}
+
+/* hover effect */
+
+.xob:hover span:nth-child(1){
+    transform: translate(-40px,-60px) rotate(-15deg);
+    transition-delay: 0s;
+}
+
+.xob:hover span:nth-child(2){
+    transform: translate(40px,-100px) rotate(25deg);
+    transition-delay: 0.25s;
+}
+
+.xob:hover span:nth-child(3){
+    transform: translate(-40px,80px) rotate(25deg);
+    transition-delay: 0.5s;
+}
+
+.xob:hover span:nth-child(4){
+    transform: translate(40px,80px) rotate(-15deg);
+    transition-delay: 0.75s;
+}
